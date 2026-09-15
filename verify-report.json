@@ -1,0 +1,13 @@
+{
+  "note_pages": 1000,
+  "unique_titles": 1000,
+  "unique_slugs": 1000,
+  "short_pages": 0,
+  "banned_hits": [],
+  "has_home": true,
+  "has_sitemap": true,
+  "has_robots": true,
+  "has_howto": true,
+  "sitemap_note_entries": 1001,
+  "ok": true
+}

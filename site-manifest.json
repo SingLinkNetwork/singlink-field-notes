@@ -1,0 +1,7 @@
+{
+  "articles": 1000,
+  "locales": 35,
+  "intents": 20,
+  "unique_titles": 1000,
+  "unique_slugs": 1000
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://singlinknetwork.github.io/singlink-field-notes/sitemap.xml
