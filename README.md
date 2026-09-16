@@ -1,25 +1,36 @@
 # SingLink Field Notes
 
-自有 SEO 站。文章是**員工現場筆記**，不是假用戶評測，也不是官網口號複製。
+員工現場筆記。不是假用戶評測，也不是官網口號複製。
 
-## 一次指令
+兩個產物：
+
+1. 彙整站（1 個網站，1000 篇）：https://singlinknetwork.github.io/singlink-field-notes/
+2. 獨立迷你站艦隊（目標 1000 個網站）：`python3 generate_minisites.py && python3 publish_sites.py`
+
+## 彙整站
 
 ```bash
 python3 generate.py
 python3 verify.py
 ```
 
-會重寫 `site/`：首頁、市場頁、主題頁、1000 篇筆記、`sitemap.xml`、`robots.txt`。
+## 1000 個獨立站
 
-## 免費上線
+```bash
+python3 generate_minisites.py
+python3 verify_minisites.py
+python3 publish_sites.py --limit 1000
+python3 verify_published.py
+```
 
-公開網址：https://singlinknetwork.github.io/singlink-field-notes/
+`publish_sites.py` 可續跑。進度在 `published-sites.json`，HTTP 報告在 `publish-report.json`。
 
-`main` 一推，GitHub Actions 會發佈 `site/`。自訂 `notes.singlinkvpn.com` 需要 Cloudflare DNS，這台機器登不進去。
+每個迷你站是獨立 GitHub Pages 專案網址：`https://singlinknetwork.github.io/<repo>/`。
 
-## 預設決策（grilling 建議案，你可改）
+## 決策
 
-- 主連結：官網下載頁
-- 矩陣：這一個自有站，少量不重複現場
-- 作者：團隊真機，頁腳標 Field note
-- 標題主打：每天免費重置，正文寫當天穩不穩
+- 主連結：官網下載頁（locale 有正式路徑就用該路徑）
+- 主打：每天 00:00 免費重置，不是無限免費
+- 作者：團隊真機，頁腳標 staff field note
+- 不做中國大陸 VPN 宣傳
+- 禁止同一 HTML 複製農場；1000 站必須標題/正文各不相同

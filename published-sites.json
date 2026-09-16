@@ -1,0 +1,56 @@
+{
+  "target": 1000,
+  "updated": "2026-09-16T01:37:10.369070+00:00",
+  "sites": [
+    {
+      "n": 0,
+      "repo": "desk-us-free-daily-0001",
+      "url": "https://singlinknetwork.github.io/desk-us-free-daily-0001/",
+      "title": "Note 0001: free VPN daily data from Denver — 28 minutes on a Pixel 8",
+      "status": "live",
+      "http_status": 200,
+      "error": null,
+      "created_at": "2026-09-16T01:34:48.389381+00:00"
+    },
+    {
+      "n": 1,
+      "repo": "note-uk-no-card-0002",
+      "url": "https://singlinknetwork.github.io/note-uk-no-card-0002/",
+      "title": "Note 0002: free VPN no credit card from Edinburgh — 25 minutes on a Galaxy S24",
+      "status": "pages_enabled",
+      "http_status": null,
+      "error": null,
+      "created_at": "2026-09-16T01:36:54.930091+00:00"
+    },
+    {
+      "n": 2,
+      "repo": "log-ca-chatgpt-0003",
+      "url": "https://singlinknetwork.github.io/log-ca-chatgpt-0003/",
+      "title": "Note 0003: VPN for ChatGPT from Calgary — 22 minutes on a iPhone 14",
+      "status": "pages_enabled",
+      "http_status": null,
+      "error": null,
+      "created_at": "2026-09-16T01:36:54.935267+00:00"
+    },
+    {
+      "n": 3,
+      "repo": "field-au-instagram-0004",
+      "url": "https://singlinknetwork.github.io/field-au-instagram-0004/",
+      "title": "Note 0004: VPN Instagram WhatsApp from Adelaide — 37 minutes on a Pixel 8",
+      "status": "pages_enabled",
+      "http_status": null,
+      "error": null,
+      "created_at": "2026-09-16T01:36:54.935779+00:00"
+    },
+    {
+      "n": 5,
+      "repo": "lobby-in-campus-0006",
+      "url": "https://singlinknetwork.github.io/lobby-in-campus-0006/",
+      "title": "Note 0006: campus Wi-Fi VPN from Bengaluru — 53 minutes on a iPhone 16",
+      "status": "pushed",
+      "http_status": null,
+      "error": null,
+      "created_at": "2026-09-16T01:37:04.333853+00:00"
+    }
+  ]
+}

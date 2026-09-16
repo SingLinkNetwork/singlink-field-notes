@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .venv/
 site/.verify.json
+minisites/
+.publish-work/
+publish-progress.log
+published-sites.json.tmp

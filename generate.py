@@ -28,6 +28,25 @@ DOWNLOAD = {
     "home": "https://singlinkvpn.com/en/",
 }
 
+# Official locale prefixes that return 200 on /{locale}/download/{platform}/.
+# zh-Hant has no matching official download path; keep English.
+LOCALE_DOWNLOAD_PREFIX = {
+    "en": "en",
+    "ja": "ja",
+    "ko": "ko",
+    "es": "es",
+    "pt": "pt",
+    "de": "de",
+    "fr": "fr",
+}
+
+
+def download_url(store: str, lang: str = "en") -> str:
+    prefix = LOCALE_DOWNLOAD_PREFIX.get(lang, "en")
+    path = DOWNLOAD.get(store, DOWNLOAD["home"])
+    return path.replace("/en/", f"/{prefix}/")
+
+
 LOCALES = [
     {"id": "us", "name": "United States", "lang": "en", "cities": ["Austin", "Seattle", "Chicago", "Brooklyn", "Denver"], "isps": ["Comcast", "Verizon", "AT&T Fiber", "T-Mobile Home"], "places": ["a campus library", "a hotel lobby", "an airport gate", "a coworking loft", "a corner cafe"]},
     {"id": "uk", "name": "United Kingdom", "lang": "en", "cities": ["Manchester", "Bristol", "Leeds", "Edinburgh", "London"], "isps": ["BT", "Virgin Media", "Sky Broadband", "Three"], "places": ["a Pret table", "a Premier Inn lobby", "a university hall", "a train carriage", "a library desk"]},

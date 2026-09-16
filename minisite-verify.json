@@ -1,0 +1,10 @@
+{
+  "sites": 1000,
+  "unique_titles": 1000,
+  "unique_html": 1000,
+  "short_pages": 0,
+  "banned_hits": [],
+  "missing": [],
+  "bad_cta": [],
+  "ok": true
+}
