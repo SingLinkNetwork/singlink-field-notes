@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-09-16T01:45:15.132414+00:00",
+  "manifest_sites": 150,
+  "checked": 150,
+  "http_200": 149,
+  "http_200_with_sitemap_robots": 149,
+  "unique_live_titles": 149,
+  "first5": [
+    "https://singlinknetwork.github.io/desk-us-free-daily-0001/",
+    "https://singlinknetwork.github.io/note-uk-no-card-0002/",
+    "https://singlinknetwork.github.io/log-ca-chatgpt-0003/",
+    "https://singlinknetwork.github.io/field-au-instagram-0004/",
+    "https://singlinknetwork.github.io/meter-sg-public-wifi-0005/"
+  ],
+  "last5": [
+    "https://singlinknetwork.github.io/lobby-in-campus-0146/",
+    "https://singlinknetwork.github.io/campus-ph-hotel-0147/",
+    "https://singlinknetwork.github.io/cafe-za-audit-0148/",
+    "https://singlinknetwork.github.io/shift-ng-cheap-0149/",
+    "https://singlinknetwork.github.io/wifi-ie-appletv-0150/"
+  ],
+  "non_200": [
+    {
+      "url": "https://singlinknetwork.github.io/desk-nz-split-0011/",
+      "http_status": 404
+    }
+  ]
+}

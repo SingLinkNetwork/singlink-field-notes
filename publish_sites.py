@@ -137,6 +137,10 @@ def http_status(url: str) -> int:
 
 def maybe_backoff(text: str) -> bool:
     low = text.lower()
+    if "too many repositories" in low or "too quickly" in low:
+        log("repo-create throttle; sleeping 900s")
+        time.sleep(900)
+        return True
     if "secondary rate limit" in low or "abuse detection" in low:
         log("secondary rate limit; sleeping 90s")
         time.sleep(90)
@@ -186,39 +190,42 @@ def publish_one(n: int, sleep_s: float, wait_http: bool) -> dict:
 
         exists = repo_exists(meta["repo"])
         if not exists:
-            created = run(
-                [
-                    "gh",
-                    "repo",
-                    "create",
-                    f"{ORG}/{meta['repo']}",
-                    "--public",
-                    "--description",
-                    meta["description"],
-                    "--homepage",
-                    meta["url"],
-                    "--disable-issues",
-                    "--disable-wiki",
-                    "--source",
-                    ".",
-                    "--remote",
-                    "origin",
-                    "--push",
-                ],
-                cwd=work,
-                timeout=240,
-            )
-            blob = (created.stdout or "") + (created.stderr or "")
-            if created.returncode != 0:
+            for attempt in range(6):
+                created = run(
+                    [
+                        "gh",
+                        "repo",
+                        "create",
+                        f"{ORG}/{meta['repo']}",
+                        "--public",
+                        "--description",
+                        meta["description"],
+                        "--homepage",
+                        meta["url"],
+                        "--disable-issues",
+                        "--disable-wiki",
+                        "--source",
+                        ".",
+                        "--remote",
+                        "origin",
+                        "--push",
+                    ],
+                    cwd=work,
+                    timeout=240,
+                )
+                blob = (created.stdout or "") + (created.stderr or "")
+                if created.returncode == 0:
+                    row["status"] = "pushed"
+                    row["error"] = None
+                    upsert(row)
+                    break
                 if "already exists" in blob.lower():
                     exists = True
-                else:
-                    maybe_backoff(blob)
-                    raise RuntimeError(blob[-800:])
-            else:
-                row["status"] = "pushed"
-                row["error"] = None
-                upsert(row)
+                    break
+                if maybe_backoff(blob) and attempt < 5:
+                    log(f"retry create {meta['repo']} attempt {attempt + 2}")
+                    continue
+                raise RuntimeError(blob[-800:])
         if exists:
             run(["git", "remote", "remove", "origin"], cwd=work)
             run(
