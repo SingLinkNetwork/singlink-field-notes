@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-16T06:28:02.562368+00:00",
-  "manifest_sites": 600,
-  "checked": 600,
-  "http_200": 600,
-  "http_200_with_sitemap_robots": 599,
-  "unique_live_titles": 600,
+  "checked_at": "2026-09-16T10:22:20.331714+00:00",
+  "manifest_sites": 1000,
+  "checked": 1000,
+  "http_200": 1000,
+  "http_200_with_sitemap_robots": 1000,
+  "unique_live_titles": 1000,
   "first5": [
     "https://singlinknetwork.github.io/desk-us-free-daily-0001/",
     "https://singlinknetwork.github.io/note-uk-no-card-0002/",
@@ -13,11 +13,12 @@
     "https://singlinknetwork.github.io/meter-sg-public-wifi-0005/"
   ],
   "last5": [
-    "https://singlinknetwork.github.io/lobby-us-tiktok-0596/",
-    "https://singlinknetwork.github.io/campus-uk-windows-0597/",
-    "https://singlinknetwork.github.io/cafe-ca-macos-0598/",
-    "https://singlinknetwork.github.io/shift-au-android-0599/",
-    "https://singlinknetwork.github.io/wifi-sg-ios-0600/"
+    "https://singlinknetwork.github.io/lobby-kr-tiktok-0996/",
+    "https://singlinknetwork.github.io/campus-es-windows-0997/",
+    "https://singlinknetwork.github.io/cafe-mx-macos-0998/",
+    "https://singlinknetwork.github.io/shift-ar-android-0999/",
+    "https://singlinknetwork.github.io/wifi-br-ios-1000/"
   ],
-  "non_200": []
+  "non_200": [],
+  "note": "Two URLs (0313, 0322) returned curl status 0 in the bulk pass; immediate recurl was HTTP 200 for index, sitemap, and robots."
 }
