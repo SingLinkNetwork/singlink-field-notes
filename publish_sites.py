@@ -300,6 +300,8 @@ def main() -> int:
     parser.add_argument("--concurrency", type=int, default=3)
     parser.add_argument("--wait-http", action="store_true")
     parser.add_argument("--retry-failed", action="store_true")
+    parser.add_argument("--wave-size", type=int, default=0, help="Pause after this many creates in one run")
+    parser.add_argument("--wave-pause", type=float, default=600, help="Seconds to pause between waves")
     args = parser.parse_args()
 
     end = min(1000, args.start + args.limit)
@@ -325,6 +327,9 @@ def main() -> int:
             d = DONE
         if d % 10 == 0:
             log(f"progress {counts()}")
+        if args.wave_size and d % args.wave_size == 0 and d < len(todo):
+            log(f"wave pause {args.wave_pause}s after {d} sites")
+            time.sleep(args.wave_pause)
         return row
 
     if args.concurrency <= 1:
