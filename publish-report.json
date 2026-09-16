@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-16T05:00:12.924877+00:00",
-  "manifest_sites": 450,
-  "checked": 450,
-  "http_200": 450,
-  "http_200_with_sitemap_robots": 450,
-  "unique_live_titles": 450,
+  "checked_at": "2026-09-16T06:28:02.562368+00:00",
+  "manifest_sites": 600,
+  "checked": 600,
+  "http_200": 600,
+  "http_200_with_sitemap_robots": 599,
+  "unique_live_titles": 600,
   "first5": [
     "https://singlinknetwork.github.io/desk-us-free-daily-0001/",
     "https://singlinknetwork.github.io/note-uk-no-card-0002/",
@@ -13,11 +13,11 @@
     "https://singlinknetwork.github.io/meter-sg-public-wifi-0005/"
   ],
   "last5": [
-    "https://singlinknetwork.github.io/lobby-pl-campus-0446/",
-    "https://singlinknetwork.github.io/campus-tr-hotel-0447/",
-    "https://singlinknetwork.github.io/cafe-id-audit-0448/",
-    "https://singlinknetwork.github.io/shift-th-cheap-0449/",
-    "https://singlinknetwork.github.io/wifi-vn-appletv-0450/"
+    "https://singlinknetwork.github.io/lobby-us-tiktok-0596/",
+    "https://singlinknetwork.github.io/campus-uk-windows-0597/",
+    "https://singlinknetwork.github.io/cafe-ca-macos-0598/",
+    "https://singlinknetwork.github.io/shift-au-android-0599/",
+    "https://singlinknetwork.github.io/wifi-sg-ios-0600/"
   ],
   "non_200": []
 }
