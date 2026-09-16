@@ -33,4 +33,5 @@ python3 verify_published.py
 - 主打：每天 00:00 免費重置，不是無限免費
 - 作者：團隊真機，頁腳標 staff field note
 - 不做中國大陸 VPN 宣傳
+- 簡體中文必做（海外華人現場，locale `sc`）；仍禁止翻牆／科學上網
 - 禁止同一 HTML 複製農場；1000 站必須標題/正文各不相同

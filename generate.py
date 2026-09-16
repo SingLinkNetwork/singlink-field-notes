@@ -29,7 +29,7 @@ DOWNLOAD = {
 }
 
 # Official locale prefixes that return 200 on /{locale}/download/{platform}/.
-# zh-Hant has no matching official download path; keep English.
+# zh-Hant / zh-Hans have no matching official download path; keep English.
 LOCALE_DOWNLOAD_PREFIX = {
     "en": "en",
     "ja": "ja",
@@ -53,13 +53,13 @@ LOCALES = [
     {"id": "ca", "name": "Canada", "lang": "en", "cities": ["Toronto", "Vancouver", "Montreal", "Calgary", "Ottawa"], "isps": ["Rogers", "Bell", "Telus", "Shaw"], "places": ["a Tim Hortons", "a dorm lounge", "a downtown hotel", "a coworking desk", "the airport lounge"]},
     {"id": "au", "name": "Australia", "lang": "en", "cities": ["Melbourne", "Sydney", "Brisbane", "Perth", "Adelaide"], "isps": ["NBN", "Telstra", "Optus", "Aussie Broadband"], "places": ["a campus wifi zone", "a hotel on the tram line", "a cafe on Chapel St", "an airport gate", "a share-house table"]},
     {"id": "sg", "name": "Singapore", "lang": "en", "cities": ["Tampines", "Jurong", "Novena", "Clementi", "Punggol"], "isps": ["Singtel", "StarHub", "M1", "ViewQwest"], "places": ["an MRT underground cafe", "a hostel common room", "a WeWork", "a campus canteen", "Changi terminal wifi"]},
-    {"id": "in", "name": "India", "lang": "en", "cities": ["Bengaluru", "Pune", "Hyderabad", "Delhi", "Mumbai"], "isps": ["Jio", "Airtel", "ACT", "BSNL"], "places": ["a PG wifi", "a campus lab", "a cafe on Church Street", "a hotel business center", "an airport lounge"]},
-    {"id": "ph", "name": "Philippines", "lang": "en", "cities": ["Quezon City", "Makati", "Cebu", "Davao", "Pasig"], "isps": ["Globe", "PLDT", "Converge", "DITO"], "places": ["a dorm wifi", "a mall food court", "a BPO night shift desk", "a hotel lobby", "a campus library"]},
+    {"id": "in", "name": "भारत", "lang": "hi", "cities": ["बेंगलुरु", "पुणे", "हैदराबाद", "दिल्ली", "मुंबई"], "isps": ["Jio", "Airtel", "ACT", "BSNL"], "places": ["PG वाई-फाई", "कैंपस लैब", "Church Street का कैफे", "होटल बिजनेस सेंटर", "एयरपोर्ट लाउंज"]},
+    {"id": "ph", "name": "Pilipinas", "lang": "fil", "cities": ["Quezon City", "Makati", "Cebu", "Davao", "Pasig"], "isps": ["Globe", "PLDT", "Converge", "DITO"], "places": ["wifi ng dorm", "food court sa mall", "desk ng night shift", "lobby ng hotel", "library ng campus"]},
     {"id": "za", "name": "South Africa", "lang": "en", "cities": ["Cape Town", "Johannesburg", "Durban", "Pretoria", "Stellenbosch"], "isps": ["Fibrehoods", "Rain", "Vodacom", "MTN"], "places": ["a campus lab", "a guesthouse", "a cafe in Gardens", "an airport gate", "a coworking loft"]},
     {"id": "ng", "name": "Nigeria", "lang": "en", "cities": ["Lagos", "Abuja", "Ibadan", "Port Harcourt", "Enugu"], "isps": ["MTN", "Airtel", "Glo", "Spectranet"], "places": ["a campus hostel", "a hotel generator hour", "a cafe in Yaba", "an office coworking", "the airport wifi"]},
     {"id": "ie", "name": "Ireland", "lang": "en", "cities": ["Dublin", "Cork", "Galway", "Limerick", "Kilkenny"], "isps": ["Eir", "Virgin Media", "Siro", "Three"], "places": ["a campus library", "a hotel near the Luas", "a cafe on Capel Street", "an airport gate", "a share-house"]},
     {"id": "nz", "name": "New Zealand", "lang": "en", "cities": ["Auckland", "Wellington", "Christchurch", "Hamilton", "Dunedin"], "isps": ["Chorus", "Spark", "One NZ", "2degrees"], "places": ["a campus hall", "a backpacker lounge", "a cafe on Cuba St", "an airport gate", "a flat wifi"]},
-    {"id": "my", "name": "Malaysia", "lang": "en", "cities": ["Kuala Lumpur", "Penang", "Johor Bahru", "Ipoh", "Kota Kinabalu"], "isps": ["Unifi", "Maxis", "CelcomDigi", "TIME"], "places": ["a campus wifi", "a hotel in Bukit Bintang", "a mamak with wifi", "an airport gate", "a coworking desk"]},
+    {"id": "my", "name": "Malaysia", "lang": "ms", "cities": ["Kuala Lumpur", "Pulau Pinang", "Johor Bahru", "Ipoh", "Kota Kinabalu"], "isps": ["Unifi", "Maxis", "CelcomDigi", "TIME"], "places": ["wifi kampus", "hotel di Bukit Bintang", "mamak ada wifi", "gate lapangan terbang", "meja coworking"]},
     {"id": "tw", "name": "台灣", "lang": "zh-Hant", "cities": ["台北", "新竹", "台中", "高雄", "台南"], "isps": ["中華電信", "台灣大哥大", "遠傳", "台灣之星殘網"], "places": ["捷運站咖啡廳", "宿舍 Wi-Fi", "旅館大廳", "校園圖書館", "機場候機室"]},
     {"id": "hk", "name": "香港", "lang": "zh-Hant", "cities": ["旺角", "銅鑼灣", "沙田", "荃灣", "觀塘"], "isps": ["PCCW", "HKBN", "3HK", "CMHK"], "places": ["港鐵上蓋咖啡店", "宿舍 Wi-Fi", "商務酒店大堂", "大學圖書館", "機場禁區 Wi-Fi"]},
     {"id": "jp", "name": "日本", "lang": "ja", "cities": ["渋谷", "大阪", "福岡", "名古屋", "札幌"], "isps": ["NTT", "auひかり", "SoftBank", "NURO"], "places": ["駅チカのカフェ", "ゲストハウス", "大学の図書館", "ホテルのロビー", "空港の待合"]},
@@ -71,17 +71,17 @@ LOCALES = [
     {"id": "pt", "name": "Portugal", "lang": "pt", "cities": ["Lisboa", "Porto", "Coimbra", "Braga", "Faro"], "isps": ["MEO", "NOS", "Vodafone PT"], "places": ["um café no Bairro Alto", "a residência", "a biblioteca", "o hotel", "o aeroporto"]},
     {"id": "de", "name": "Deutschland", "lang": "de", "cities": ["Berlin", "Hamburg", "München", "Köln", "Leipzig"], "isps": ["Telekom", "Vodafone DE", "O2", "1&1"], "places": ["ein Café am Bahnsteig", "das Wohnheim-WLAN", "die Unibibliothek", "die Hotellobby", "das Gate"]},
     {"id": "fr", "name": "France", "lang": "fr", "cities": ["Lyon", "Lille", "Nantes", "Toulouse", "Paris"], "isps": ["Orange", "Free", "SFR", "Bouygues"], "places": ["un café près du métro", "le wifi du CROUS", "la BU", "le lobby", "la salle d'embarquement"]},
-    {"id": "it", "name": "Italia", "lang": "en", "cities": ["Milan", "Rome", "Turin", "Bologna", "Naples"], "isps": ["TIM", "Vodafone IT", "WindTre", "Fastweb"], "places": ["a cafe near the metro", "a hostel wifi", "a campus library", "a hotel lobby", "an airport gate"]},
-    {"id": "nl", "name": "Netherlands", "lang": "en", "cities": ["Amsterdam", "Rotterdam", "Utrecht", "Eindhoven", "Groningen"], "isps": ["KPN", "Ziggo", "Odido", "Delta"], "places": ["a cafe on a canal", "a student house", "a campus desk", "a hotel lobby", "Schiphol wifi"]},
-    {"id": "pl", "name": "Poland", "lang": "en", "cities": ["Warsaw", "Kraków", "Wrocław", "Gdańsk", "Poznań"], "isps": ["Orange PL", "Play", "T-Mobile PL", "Netia"], "places": ["a campus wifi", "a hostel", "a cafe in Kazimierz", "a hotel lobby", "the airport"]},
-    {"id": "tr", "name": "Türkiye", "lang": "en", "cities": ["Kadıköy", "Ankara", "Izmir", "Bursa", "Antalya"], "isps": ["Türk Telekom", "Turkcell", "Vodafone TR", "Superonline"], "places": ["a campus canteen", "a hotel lobby", "a cafe on the ferry side", "an airport gate", "a coworking desk"]},
-    {"id": "id", "name": "Indonesia", "lang": "en", "cities": ["Jakarta", "Bandung", "Surabaya", "Yogyakarta", "Denpasar"], "isps": ["IndiHome", "XL", "Telkomsel", "Biznet"], "places": ["a kos wifi", "a campus lab", "a cafe on Braga", "a hotel lobby", "the airport"]},
-    {"id": "th", "name": "Thailand", "lang": "en", "cities": ["Bangkok", "Chiang Mai", "Phuket", "Khon Kaen", "Pattaya"], "isps": ["AIS", "True", "3BB", "NT"], "places": ["a condo wifi", "a campus hall", "a cafe in Ari", "a hotel lobby", "the airport"]},
-    {"id": "vn", "name": "Vietnam", "lang": "en", "cities": ["Hanoi", "Ho Chi Minh City", "Da Nang", "Hue", "Can Tho"], "isps": ["FPT", "Viettel", "VNPT", "CMC"], "places": ["a homestay wifi", "a campus lab", "a cafe on a side street", "a hotel lobby", "the airport"]},
-    {"id": "ru", "name": "Russian-speaking", "lang": "en", "cities": ["Tbilisi", "Yerevan", "Almaty", "Belgrade", "Riga"], "isps": ["local fiber", "Beeline", "Magti", "Bite"], "places": ["a hostel common room", "a campus wifi", "a cafe", "a hotel lobby", "the airport"]},
-    {"id": "ua", "name": "Ukraine", "lang": "en", "cities": ["Kyiv", "Lviv", "Odesa", "Dnipro", "Kharkiv"], "isps": ["Kyivstar", "Vodafone UA", "lifecell", "local fiber"], "places": ["a coworking", "a campus hall", "a cafe", "a hotel lobby", "the train station wifi"]},
-    {"id": "il", "name": "Israel", "lang": "en", "cities": ["Tel Aviv", "Haifa", "Jerusalem", "Beersheba", "Herzliya"], "isps": ["Bezeq", "Partner", "Hot", "Cellcom"], "places": ["a campus lab", "a cafe on Rothschild", "a hotel lobby", "a coworking", "the airport"]},
-    {"id": "ae", "name": "UAE / Gulf", "lang": "en", "cities": ["Dubai Marina", "Abu Dhabi", "Sharjah", "Doha", "Riyadh"], "isps": ["Etisalat", "du", "stc", "Ooredoo"], "places": ["a hotel business center", "a campus wifi", "a cafe in a mall", "a coworking", "the airport"]},
+    {"id": "it", "name": "Italia", "lang": "it", "cities": ["Milano", "Roma", "Torino", "Bologna", "Napoli"], "isps": ["TIM", "Vodafone IT", "WindTre", "Fastweb"], "places": ["un caffè vicino alla metro", "il wifi dell'ostello", "la biblioteca del campus", "la hall dell'hotel", "il gate dell'aeroporto"]},
+    {"id": "nl", "name": "Nederland", "lang": "nl", "cities": ["Amsterdam", "Rotterdam", "Utrecht", "Eindhoven", "Groningen"], "isps": ["KPN", "Ziggo", "Odido", "Delta"], "places": ["een café aan de gracht", "een studentenhuis", "een campusplek", "de hotellobby", "wifi op Schiphol"]},
+    {"id": "pl", "name": "Polska", "lang": "pl", "cities": ["Warszawa", "Kraków", "Wrocław", "Gdańsk", "Poznań"], "isps": ["Orange PL", "Play", "T-Mobile PL", "Netia"], "places": ["wifi na kampusie", "hostelu", "kawiarni na Kazimierzu", "lobby hotelu", "na lotnisku"]},
+    {"id": "tr", "name": "Türkiye", "lang": "tr", "cities": ["Kadıköy", "Ankara", "İzmir", "Bursa", "Antalya"], "isps": ["Türk Telekom", "Turkcell", "Vodafone TR", "Superonline"], "places": ["kampüs kantini", "otel lobisi", "iskele yanı kafe", "havalimanı kapısı", "coworking masası"]},
+    {"id": "id", "name": "Indonesia", "lang": "id", "cities": ["Jakarta", "Bandung", "Surabaya", "Yogyakarta", "Denpasar"], "isps": ["IndiHome", "XL", "Telkomsel", "Biznet"], "places": ["wifi kos", "lab kampus", "kafe di Braga", "lobi hotel", "bandara"]},
+    {"id": "th", "name": "ประเทศไทย", "lang": "th", "cities": ["กรุงเทพฯ", "เชียงใหม่", "ภูเก็ต", "ขอนแก่น", "พัทยา"], "isps": ["AIS", "True", "3BB", "NT"], "places": ["Wi-Fi คอนโด", "หอประชุมมหาวิทยาลัย", "คาเฟ่ย่านอารีย์", "ล็อบบี้โรงแรม", "สนามบิน"]},
+    {"id": "vn", "name": "Việt Nam", "lang": "vi", "cities": ["Hà Nội", "TP. Hồ Chí Minh", "Đà Nẵng", "Huế", "Cần Thơ"], "isps": ["FPT", "Viettel", "VNPT", "CMC"], "places": ["wifi nhà nghỉ", "lab trường", "quán cà phê hẻm", "sảnh khách sạn", "sân bay"]},
+    {"id": "ru", "name": "Русскоязычные", "lang": "ru", "cities": ["Тбилиси", "Ереван", "Алматы", "Белград", "Рига"], "isps": ["местная оптика", "Beeline", "Magti", "Bite"], "places": ["хостел", "кампусный wifi", "кафе", "лобби отеля", "аэропорт"]},
+    {"id": "ua", "name": "Україна", "lang": "uk", "cities": ["Київ", "Львів", "Одеса", "Дніпро", "Харків"], "isps": ["Kyivstar", "Vodafone UA", "lifecell", "місцева оптика"], "places": ["коворкінг", "актова зала", "кав'ярня", "лобі готелю", "wifi на вокзалі"]},
+    {"id": "il", "name": "ישראל", "lang": "he", "cities": ["תל אביב", "חיפה", "ירושלים", "באר שבע", "הרצליה"], "isps": ["Bezeq", "Partner", "Hot", "Cellcom"], "places": ["מעבדת קמפוס", "בית קפה ברוטשילד", "לובי מלון", "חלל עבודה", "השדה"]},
+    {"id": "ae", "name": "الخليج", "lang": "ar", "cities": ["دبي مارينا", "أبوظبي", "الشارقة", "الدوحة", "الرياض"], "isps": ["Etisalat", "du", "stc", "Ooredoo"], "places": ["مركز أعمال الفندق", "واي فاي الحرم", "مقهى في المول", "مساحة عمل", "المطار"]},
     {"id": "cz", "name": "Czechia", "lang": "en", "cities": ["Prague", "Brno", "Ostrava", "Plzeň", "Liberec"], "isps": ["O2 CZ", "T-Mobile CZ", "Vodafone CZ", "UPC"], "places": ["a hostel in Žižkov", "a campus lab", "a cafe", "a hotel lobby", "the airport"]},
 ]
 
@@ -204,8 +204,21 @@ def page(title, desc, lang, body, path, extra_head=""):
 """
 
 
+# Keep 35 slots so repo names for note N stay stable. zh-Hans uses odd Singapore slots.
+SC_OVERSEAS = {
+    "id": "sg",
+    "name": "海外华人",
+    "lang": "zh-Hans",
+    "cities": ["新加坡", "吉隆坡", "槟城", "悉尼", "温哥华"],
+    "isps": ["Singtel", "StarHub", "Unifi", "Maxis", "Telstra"],
+    "places": ["地铁站咖啡厅", "宿舍 Wi-Fi", "酒店大厅", "校园图书馆", "机场候机室"],
+}
+
+
 def facts(n):
-    loc = LOCALES[n % len(LOCALES)]
+    loc = LOCALES[n % 35]
+    if loc["id"] == "sg" and n % 2 == 1:
+        loc = SC_OVERSEAS
     intent = INTENTS[n % len(INTENTS)]
     city = pick(loc["cities"], n, "city")
     isp = pick(loc["isps"], n, "isp")
@@ -322,6 +335,46 @@ def article_zh(f):
     return title, desc, paras
 
 
+def article_zh_hans(f):
+    loc, intent = f["loc"], f["intent"]
+    fail = (
+        f"第一个 {f['node']} 节点卡了大约 20 秒，我换一次就稳了。"
+        if f["fail"]
+        else f"第一个 {f['node']} 节点没掉，我就没再换。"
+    )
+    openings = {
+        "cap": f"我今天不是来找无限免费 VPN。我只想要明天 0 点还会再给一次。人在{f['city']}，网络是{f['isp']}，装置是{f['device']}，我用 SingLinkVPN 的每日免费流量。",
+        "install": f"我在{f['city']}用{f['device']}从官方商店装 SingLinkVPN。电子邮箱登录，按一下连上，没有配置文件，也没绑卡。",
+        "ai": f"我在{f['city']}连上之后开 ChatGPT。节点停在{f['node']}，没有短时间内换国家。",
+        "social": f"我只在乎 Instagram 或 Telegram 会不会在{f['city']}的{f['place']}掉线。",
+        "wifi": f"{f['city']}的{f['place']}是公共网络。我打开它是不想明文出去，不是要当英雄。",
+        "campus": f"{f['city']}校园网是整场测试。{f['isp']}，{f['device']}。",
+        "hotel": f"{f['city']}酒店 Wi-Fi 通常先过入口页。我登入房间网之后才连。",
+        "audit": f"我先读过 2026 年 7 月 29 日那份无日志快照的范围，才在{f['city']}真的打开 App。这篇不是朗读稿。",
+        "price": f"当天免费流量不够。我下午看了官网 Fast，当时标 $3.59／月、288GB。价格会变。",
+        "tv": f"同一个电子邮箱，{f['city']}的 Apple TV 4K。手机和电视不是同一个客户端。",
+        "split": f"我开规则模式，本地银行走直连，ChatGPT 走节点。{f['city']}，{f['device']}。",
+        "tech": f"我在{f['device']}上看过 IPv6 和连锁代理。我不会假装审过 Sola。",
+        "compare": f"Proton 免费档不限流量。SingLink 免费档是每天重置。我在{f['city']}用后者，是因为不用卡，而且明天还有。",
+        "fail": f"我换成{f['node']}节点，Netflix 还是把我当没搬家。官网说明自己写过：节点地区不等于每个 App 的地区。",
+        "desktop": f"桌面免费档从每天 500MB 起。我在{f['city']}的{f['place']}用{f['device']}。",
+    }
+    body = openings.get(intent["arch"], openings["cap"])
+    mid = f"{fail} 手机每天 200MB。我在{f['place']}大概用了 {f['mins']} 分钟就觉得紧，停笔时还显示 {f['left']}MB。我用电子邮箱登录，这不是匿名。若以后付费，金流资料在支付机构。我读到的快照是范围内没看到浏览日志，我不会喊 100 分。"
+    end = f"这是员工现场笔记，不是路人评测。要同一条安装路径，只连官方下载：{cta(f['store'])}。官网口号我不会贴。"
+    title = f"笔记 {f['n']+1:04d}：{f['city']}现场，{intent['kw']}，{f['device']} 用了 {f['mins']} 分钟"
+    desc = f"{f['city']}、{f['isp']}、{f['place']}的现场笔记。每日免费流量，不写口号。"
+    paras = [
+        body,
+        mid,
+        end,
+        "本地用不到隧道的 App，我让它直连会比较快。官网功能页有规则模式，不是叫你把所有数据包都拖去国外。",
+        "我没写全天 Netflix，没把新闻稿通路写成专题报道，也没贴官网口号。",
+        "明天 0 点流量会重置。我要的就是这件事。",
+    ]
+    return title, desc, paras
+
+
 def article_ja(f):
     fail = "最初のノードが二十秒ほど詰まったので、一度だけ切り替えた。" if f["fail"] else "最初のノードで持った。余計な乗り換えはしていない。"
     title = f"メモ {f['n']+1:04d}：{f['city']}の現場、{intent_kw(f)}、{f['device']}で{f['mins']}分"
@@ -400,6 +453,202 @@ def article_fr(f):
     return title, desc, paras
 
 
+def article_it(f):
+    fail = "Il primo nodo si è bloccato 20 secondi. Ho cambiato una volta." if f["fail"] else "Il primo nodo ha tenuto. Non ho cambiato."
+    title = f"Nota {f['n']+1:04d} a {f['city']}: {intent_kw(f)} su {f['device']} ({f['mins']} min)"
+    desc = f"Nota sul campo a {f['city']} ({f['isp']}, {f['place']}). Traffico giornaliero, senza slogan."
+    paras = [
+        f"A {f['place']} di {f['city']}, su {f['isp']}, ho installato SingLinkVPN su un {f['device']}. Niente carta. Accesso con email. Non è anonimo.",
+        f"{fail} Sul telefono sono 200MB al giorno. Dopo {f['mins']} minuti stringeva. All'interruzione restavano {f['left']}MB.",
+        f"Nodo {f['node']}. Non ho saltato paese. ChatGPT può comunque chiedere una verifica.",
+        f"Nota dello staff, non una recensione finta. Solo il download ufficiale: {cta(f['store'])}.",
+        "Domani alle 00:00 il metro si azzera. Non è un piano gratis illimitato.",
+    ]
+    return title, desc, paras
+
+
+def article_nl(f):
+    fail = "De eerste node hapte 20 seconden. Ik wisselde één keer." if f["fail"] else "De eerste node hield. Ik bleef."
+    title = f"Notitie {f['n']+1:04d} in {f['city']}: {intent_kw(f)} op {f['device']} ({f['mins']} min)"
+    desc = f"Veldnotitie in {f['city']} ({f['isp']}, {f['place']}). Dagelijkse vrije data, geen slogan."
+    paras = [
+        f"Op {f['place']} in {f['city']}, via {f['isp']}, zette ik SingLinkVPN op een {f['device']}. Geen kaart. Inloggen met e-mail. Niet anoniem.",
+        f"{fail} Op mobiel is het 200MB per dag. Na {f['mins']} minuten werd het krap. Toen ik stopte stond er nog {f['left']}MB.",
+        f"Node {f['node']}. Geen landen hoppen. ChatGPT kan alsnog een check vragen.",
+        f"Interne veldnotitie. Alleen de officiële download: {cta(f['store'])}.",
+        "Morgen om 00:00 reset de meter. Dat is geen onbeperkt gratis plan.",
+    ]
+    return title, desc, paras
+
+
+def article_pl(f):
+    fail = "Pierwszy węzeł zaciął się na 20 sekund. Zmieniłem raz." if f["fail"] else "Pierwszy węzeł utrzymał się. Zostałem."
+    title = f"Notatka {f['n']+1:04d} z {f['city']}: {intent_kw(f)} na {f['device']} ({f['mins']} min)"
+    desc = f"Notatka z {f['city']} ({f['isp']}, {f['place']}). Dzienny darmowy transfer, bez sloganu."
+    paras = [
+        f"W {f['place']} w {f['city']}, przez {f['isp']}, zainstalowałem SingLinkVPN na {f['device']}. Bez karty. Logowanie e-mailem. To nie jest anonimowe.",
+        f"{fail} Na telefonie jest 200MB dziennie. Po {f['mins']} minutach było ciasno. Zostało {f['left']}MB.",
+        f"Węzeł {f['node']}. Bez skakania po krajach. ChatGPT i tak może poprosić o weryfikację.",
+        f"Notatka zespołu, nie fałszywa recenzja. Tylko oficjalny download: {cta(f['store'])}.",
+        "Jutro o 00:00 licznik wraca. To nie jest nielimitowane darmowe.",
+    ]
+    return title, desc, paras
+
+
+def article_tr(f):
+    fail = "İlk düğüm 20 saniye takıldı. Bir kez değiştirdim." if f["fail"] else "İlk düğüm tuttu. Değiştirmedim."
+    title = f"Not {f['n']+1:04d} {f['city']}: {intent_kw(f)} / {f['device']} ({f['mins']} dk)"
+    desc = f"{f['city']} saha notu ({f['isp']}, {f['place']}). Günlük ücretsiz kotası, slogan yok."
+    paras = [
+        f"{f['city']} içinde {f['place']} konumunda, {f['isp']} ile {f['device']} cihazına SingLinkVPN kurdum. Kart yok. E-posta ile giriş. Anonim değil.",
+        f"{fail} Telefonda günde 200MB. {f['mins']} dakikada daraldı. Bıraktığımda {f['left']}MB kalmıştı.",
+        f"Düğüm {f['node']}. Ülke değiştirmedim. ChatGPT yine doğrulama isteyebilir.",
+        f"Ekip saha notu. Yalnız resmi indirme: {cta(f['store'])}.",
+        "Yarın 00:00'da kotası sıfırlanır. Sınırsız ücretsiz değil.",
+    ]
+    return title, desc, paras
+
+
+def article_id(f):
+    fail = "Node pertama macet sekitar 20 detik. Saya ganti sekali." if f["fail"] else "Node pertama bertahan. Saya tidak ganti."
+    title = f"Catatan {f['n']+1:04d} di {f['city']}: {intent_kw(f)} di {f['device']} ({f['mins']} mnt)"
+    desc = f"Catatan lapangan di {f['city']} ({f['isp']}, {f['place']}). Kuota harian, tanpa slogan."
+    paras = [
+        f"Di {f['place']} {f['city']}, lewat {f['isp']}, saya pasang SingLinkVPN di {f['device']}. Tanpa kartu. Masuk pakai email. Bukan anonim.",
+        f"{fail} Di ponsel 200MB sehari. Setelah {f['mins']} menit terasa mepet. Sisa {f['left']}MB.",
+        f"Node {f['node']}. Tidak loncat negara. ChatGPT tetap bisa minta verifikasi.",
+        f"Catatan staf, bukan ulasan palsu. Hanya unduhan resmi: {cta(f['store'])}.",
+        "Besok pukul 00:00 kuota kembali. Ini bukan gratis tanpa batas.",
+    ]
+    return title, desc, paras
+
+
+def article_th(f):
+    fail = "โหนดแรกค้างราว 20 วินาที ฉันสลับครั้งเดียว" if f["fail"] else "โหนดแรกนิ่ง ฉันไม่ได้สลับ"
+    title = f"บันทึก {f['n']+1:04d} ที่ {f['city']}: {intent_kw(f)} บน {f['device']} ({f['mins']} นาที)"
+    desc = f"บันทึกภาคสนามที่ {f['city']} ({f['isp']}, {f['place']}) โควตารายวัน ไม่มีสโลแกน"
+    paras = [
+        f"ที่ {f['place']} ใน {f['city']} ผ่าน {f['isp']} ฉันติดตั้ง SingLinkVPN บน {f['device']} ไม่ผูกบัตร เข้าด้วยอีเมล ไม่ใช่ไม่ระบุตัวตน",
+        f"{fail} มือถือได้ 200MB ต่อวัน ประมาณ {f['mins']} นาทีก็เริ่มตึง ตอนหยุดเหลือ {f['left']}MB",
+        f"โหนด {f['node']} ไม่กระโดดประเทศ ChatGPT ยังอาจขอตรวจ",
+        f"บันทึกของทีม ไม่ใช่รีวิวปลอม ดาวน์โหลดทางการเท่านั้น: {cta(f['store'])}",
+        "พรุ่งนี้ 00:00 โควตาจะรีเซ็ต นี่ไม่ใช่ฟรีไม่จำกัด",
+    ]
+    return title, desc, paras
+
+
+def article_vi(f):
+    fail = "Nút đầu đứng khoảng 20 giây. Tôi đổi một lần." if f["fail"] else "Nút đầu giữ được. Tôi không đổi."
+    title = f"Ghi chép {f['n']+1:04d} tại {f['city']}: {intent_kw(f)} trên {f['device']} ({f['mins']} phút)"
+    desc = f"Ghi chép hiện trường tại {f['city']} ({f['isp']}, {f['place']}). Data ngày, không khẩu hiệu."
+    paras = [
+        f"Ở {f['place']} tại {f['city']}, qua {f['isp']}, tôi cài SingLinkVPN trên {f['device']}. Không thẻ. Đăng nhập email. Không ẩn danh.",
+        f"{fail} Điện thoại 200MB/ngày. Sau {f['mins']} phút đã chật. Còn {f['left']}MB.",
+        f"Nút {f['node']}. Không nhảy quốc gia. ChatGPT vẫn có thể hỏi xác minh.",
+        f"Ghi chép nhân viên, không phải review giả. Chỉ tải chính thức: {cta(f['store'])}.",
+        "Ngày mai 00:00 đồng hồ reset. Đây không phải gói miễn phí không giới hạn.",
+    ]
+    return title, desc, paras
+
+
+def article_ar(f):
+    fail = "تعطل أول عقدة نحو 20 ثانية. بدّلت مرة واحدة." if f["fail"] else "صمدت العقدة الأولى. لم أبدّل."
+    title = f"ملاحظة {f['n']+1:04d} في {f['city']}: {intent_kw(f)} على {f['device']} ({f['mins']} د)"
+    desc = f"ملاحظة ميدانية في {f['city']} ({f['isp']}، {f['place']}). بيانات يومية، بلا شعار."
+    paras = [
+        f"في {f['place']} بمدينة {f['city']} عبر {f['isp']} ثبّتُ SingLinkVPN على {f['device']}. بلا بطاقة. دخول بالبريد. ليست هوية مجهولة.",
+        f"{fail} على الجوال 200MB في اليوم. بعد {f['mins']} دقيقة ضاق الحجم. بقي {f['left']}MB.",
+        f"العقدة {f['node']}. بلا تنقّل بين الدول. قد يطلب ChatGPT تحققاً.",
+        f"ملاحظة فريق، ليست مراجعة مزيفة. التحميل الرسمي فقط: {cta(f['store'])}.",
+        "غداً عند 00:00 تُعاد الحصة. هذه ليست مجانية بلا حد.",
+    ]
+    return title, desc, paras
+
+
+def article_hi(f):
+    fail = "पहला नोड करीब 20 सेकंड अटका। मैंने एक बार बदला।" if f["fail"] else "पहला नोड टिका रहा। मैंने नहीं बदला।"
+    title = f"नोट {f['n']+1:04d} {f['city']}: {intent_kw(f)} · {f['device']} ({f['mins']} मिनट)"
+    desc = f"{f['city']} की फील्ड नोट ({f['isp']}, {f['place']})। रोज़ मुफ्त डेटा, बिना नारे।"
+    paras = [
+        f"{f['city']} में {f['place']} पर, {f['isp']} से, मैंने {f['device']} पर SingLinkVPN लगाया। कार्ड नहीं। ईमेल लॉगिन। यह गुमनाम नहीं है।",
+        f"{fail} मोबाइल पर दिन में 200MB। {f['mins']} मिनट में तंग हुआ। रुकते समय {f['left']}MB बचा था।",
+        f"नोड {f['node']}। देश hop नहीं किया। ChatGPT फिर भी जाँच माँग सकता है।",
+        f"स्टाफ की फील्ड नोट, बनावटी रिव्यू नहीं। सिर्फ़ आधिकारिक डाउनलोड: {cta(f['store'])}।",
+        "कल 00:00 बजे मीटर रीसेट होगा। यह अनलिमिटेड फ्री प्लान नहीं है।",
+    ]
+    return title, desc, paras
+
+
+def article_ms(f):
+    fail = "Nod pertama tersekat kira-kira 20 saat. Saya tukar sekali." if f["fail"] else "Nod pertama bertahan. Saya tidak tukar."
+    title = f"Nota {f['n']+1:04d} di {f['city']}: {intent_kw(f)} pada {f['device']} ({f['mins']} min)"
+    desc = f"Nota lapangan di {f['city']} ({f['isp']}, {f['place']}). Kuota harian, tanpa slogan."
+    paras = [
+        f"Di {f['place']} di {f['city']}, melalui {f['isp']}, saya pasang SingLinkVPN pada {f['device']}. Tiada kad. Log masuk e-mel. Bukan tanpa nama.",
+        f"{fail} Pada telefon 200MB sehari. Selepas {f['mins']} minit sudah ketat. Tinggal {f['left']}MB.",
+        f"Nod {f['node']}. Tidak lompat negara. ChatGPT masih boleh minta pengesahan.",
+        f"Nota kakitangan, bukan ulasan palsu. Muat turun rasmi sahaja: {cta(f['store'])}.",
+        "Esok 00:00 meter direset. Ini bukan pelan percuma tanpa had.",
+    ]
+    return title, desc, paras
+
+
+def article_uk(f):
+    fail = "Перша нода зависла секунд на 20. Я змінив один раз." if f["fail"] else "Перша нода трималась. Я не змінював."
+    title = f"Нотатка {f['n']+1:04d} з {f['city']}: {intent_kw(f)} на {f['device']} ({f['mins']} хв)"
+    desc = f"Польова нотатка з {f['city']} ({f['isp']}, {f['place']}). Щоденний трафік, без слогана."
+    paras = [
+        f"У {f['place']} у {f['city']}, через {f['isp']}, я встановив SingLinkVPN на {f['device']}. Без картки. Вхід з пошти. Це не анонімно.",
+        f"{fail} На телефоні 200MB на день. За {f['mins']} хвилин стало тісно. Залишилось {f['left']}MB.",
+        f"Нода {f['node']}. Без стрибків країнами. ChatGPT все одно може попросити перевірку.",
+        f"Нотатка команди, не фейковий відгук. Лише офіційне завантаження: {cta(f['store'])}.",
+        "Завтра о 00:00 лічильник обнулиться. Це не безлімітний безкоштовний план.",
+    ]
+    return title, desc, paras
+
+
+def article_ru(f):
+    fail = "Первая нода зависла секунд на 20. Переключил один раз." if f["fail"] else "Первая нода держалась. Не менял."
+    title = f"Заметка {f['n']+1:04d} из {f['city']}: {intent_kw(f)} на {f['device']} ({f['mins']} мин)"
+    desc = f"Полевая заметка из {f['city']} ({f['isp']}, {f['place']}). Дневной лимит, без слогана."
+    paras = [
+        f"В {f['place']} в {f['city']}, через {f['isp']}, я поставил SingLinkVPN на {f['device']}. Без карты. Вход по почте. Это не анонимно.",
+        f"{fail} На телефоне 200MB в день. Через {f['mins']} минут стало тесно. Осталось {f['left']}MB.",
+        f"Нода {f['node']}. Без скачков по странам. ChatGPT всё равно может запросить проверку.",
+        f"Заметка сотрудников, не фейковый отзыв. Только официальная загрузка: {cta(f['store'])}.",
+        "Завтра в 00:00 счётчик обнулится. Это не безлимитный бесплатный тариф.",
+    ]
+    return title, desc, paras
+
+
+def article_he(f):
+    fail = "הצומת הראשון נתקע כ־20 שניות. החלפתי פעם אחת." if f["fail"] else "הצומת הראשון החזיק. לא החלפתי."
+    title = f"פתק {f['n']+1:04d} מ{f['city']}: {intent_kw(f)} על {f['device']} ({f['mins']} דק׳)"
+    desc = f"פתק שטח מ{f['city']} ({f['isp']}, {f['place']}). מכסה יומית, בלי סלוגן."
+    paras = [
+        f"ב{f['place']} ב{f['city']}, דרך {f['isp']}, התקנתי SingLinkVPN על {f['device']}. בלי כרטיס. כניסה במייל. זה לא אנונימי.",
+        f"{fail} בנייד יש 200MB ביום. אחרי {f['mins']} דקות נהיה צפוף. נשארו {f['left']}MB.",
+        f"צומת {f['node']}. בלי לקפוץ בין מדינות. ChatGPT עדיין יכול לבקש אימות.",
+        f"פתק צוות, לא ביקורת מזויפת. רק ההורדה הרשמית: {cta(f['store'])}.",
+        "מחר ב־00:00 המונה מתאפס. זה לא חבילה חינמית בלי הגבלה.",
+    ]
+    return title, desc, paras
+
+
+def article_fil(f):
+    fail = "Huminto ang unang node nang 20 segundo. Palit ako minsan." if f["fail"] else "Tumagal ang unang node. Hindi ako lumipat."
+    title = f"Tala {f['n']+1:04d} sa {f['city']}: {intent_kw(f)} sa {f['device']} ({f['mins']} min)"
+    desc = f"Field note sa {f['city']} ({f['isp']}, {f['place']}). Daily free data, walang slogan."
+    paras = [
+        f"Sa {f['place']} sa {f['city']}, sa {f['isp']}, nag-install ako ng SingLinkVPN sa {f['device']}. Walang card. Email login. Hindi ito anonymous.",
+        f"{fail} Sa mobile, 200MB kada araw. Pagkatapos ng {f['mins']} minuto, sikip na. May {f['left']}MB pa.",
+        f"Node {f['node']}. Hindi ako tumalon ng bansa. Puwede pa ring magpa-verify ang ChatGPT.",
+        f"Tala ng staff, hindi pekeng review. Opisyal na download lang: {cta(f['store'])}.",
+        "Bukas ng 00:00 magre-reset ang meter. Hindi ito unlimited free.",
+    ]
+    return title, desc, paras
+
+
 def intent_kw(f):
     return f["intent"]["kw"]
 
@@ -407,12 +656,27 @@ def intent_kw(f):
 WRITERS = {
     "en": article_en,
     "zh-Hant": article_zh,
+    "zh-Hans": article_zh_hans,
     "ja": article_ja,
     "ko": article_ko,
     "es": article_es,
     "pt": article_pt,
     "de": article_de,
     "fr": article_fr,
+    "it": article_it,
+    "nl": article_nl,
+    "pl": article_pl,
+    "tr": article_tr,
+    "id": article_id,
+    "th": article_th,
+    "vi": article_vi,
+    "ar": article_ar,
+    "hi": article_hi,
+    "ms": article_ms,
+    "uk": article_uk,
+    "ru": article_ru,
+    "he": article_he,
+    "fil": article_fil,
 }
 
 

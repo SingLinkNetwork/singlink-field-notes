@@ -15,6 +15,8 @@ OUT = ROOT / "minisites"
 BANNED = [
     "Open SingLink, Open the World",
     "翻牆",
+    "翻墙",
+    "科学上网",
     "破解",
     "保證 Netflix 4K",
 ]
@@ -52,7 +54,7 @@ def main() -> int:
         lang = lang_m.group(1) if lang_m else "en"
         chars = len(re.sub(r"\s+", "", vis))
         words = len(vis.split())
-        if lang in {"ja", "zh-Hant", "ko"}:
+        if lang in {"ja", "zh-Hant", "zh-Hans", "ko", "th", "ar", "he", "hi"}:
             if chars < 350:
                 short.append(d.name)
         elif words < 80:

@@ -15,6 +15,8 @@ NOTES = SITE / "notes"
 BANNED = [
     "Open SingLink, Open the World",
     "翻牆",
+    "翻墙",
+    "科学上网",
     "破解",
     "保證 Netflix 4K",
 ]
